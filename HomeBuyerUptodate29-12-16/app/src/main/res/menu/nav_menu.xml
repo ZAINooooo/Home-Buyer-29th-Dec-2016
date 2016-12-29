@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_shortlist"
+            android:title="Shortlist"
+            app:showAsAction="always"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_residential"
+
+            android:title="Residential Search" />
+        <item
+            android:id="@+id/nav_commercial"
+            android:title="Commercial Search" />
+    </group>
+
+
+    <group
+        android:id="@+id/sub_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_postproperty"
+            android:title="Post Property" />
+        <item
+            android:id="@+id/nav_listing"
+            android:title="Manage/Edit Listings" />
+        <item
+            android:id="@+id/nav_viewResponces"
+            android:title="View Responses" />
+    </group>
+    <group
+        android:id="@+id/sub_group1"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_aboutUs"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:title="Feedback" />
+
+    </group>
+
+</menu>

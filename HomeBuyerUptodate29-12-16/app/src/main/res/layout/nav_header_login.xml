@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <RelativeLayout
+        android:id="@+id/newOne"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@mipmap/google1"
+        android:weightSum="1"
+        >
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="2dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/NameLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:hint="Name"
+                android:paddingTop="0dp" />
+            <TextView
+                android:id="@+id/EmailLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:hint="Id"
+                android:layout_marginBottom="10dp"
+               />
+
+
+
+
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="20dp"
+            android:layout_height="12dp"
+            android:id="@+id/spinner"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="12dp"
+            android:entries="@array/asad"
+
+           />
+
+    </RelativeLayout>
+
+</FrameLayout>

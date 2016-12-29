@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "303415196114",
+    "firebase_url": "https://homebuyerteam-15a05.firebaseio.com",
+    "project_id": "homebuyerteam-15a05",
+    "storage_bucket": "homebuyerteam-15a05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303415196114:android:8dba525f25a5fed2",
+        "android_client_info": {
+          "package_name": "com.example.asad.homebuyerproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303415196114-enk2h54a8d8g744oad2rc98rq7ueo2pf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWrHvuFC51qYYiypQDDvmW_1zupwTMWVM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

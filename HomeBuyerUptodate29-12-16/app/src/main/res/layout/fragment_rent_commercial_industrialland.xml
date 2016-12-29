@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:andoid="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:andoid="http://schemas.android.com/tools"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/asadzain"
+            android:elevation="0dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:id="@+id/panel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:id="@+id/TakeOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/asadali"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/barhjhjbgjkhklhjklgkigkjghjkghkj"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#E0E0E0"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Corner Property"
+                    android:textColor="#030303"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:gravity="right">
+
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkedButton="@+id/first"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rectangle"
+                        android:paddingBottom="1dp"
+                        android:paddingRight="1dp"
+                        android:paddingLeft="1dp"
+                        android:paddingTop="1dp"
+                        android:id="@+id/first">
+
+
+                        <RadioButton
+                            android:id="@+id/corneryes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/washroom" />
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#BDBDBD" />
+
+                        <RadioButton
+
+                            android:id="@+id/cornerno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/wash" />
+
+                    </RadioGroup>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Any Construction"
+                    android:textColor="#030303"
+                    android:textSize="16sp"
+                    android:layout_width="100dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:gravity="right">
+
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkedButton="@+id/first"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rectangle"
+                        android:paddingTop="1dp"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:id="@+id/first">
+
+
+                        <RadioButton
+                            android:id="@+id/anyconstructionyes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/washroom" />
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#BDBDBD" />
+
+                        <RadioButton
+
+                            android:id="@+id/anyconstructionno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/wash" />
+
+                    </RadioGroup>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Boundary Wall"
+                    android:textColor="#030303"
+                    android:textSize="16sp"
+                    android:layout_width="100dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkedButton="@+id/first"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:paddingBottom="1dp"
+                        android:paddingRight="1dp"
+                        android:paddingLeft="1dp"
+                        android:background="@drawable/rectangle"
+                        android:paddingTop="1dp"
+                        android:id="@+id/first">
+
+
+                        <RadioButton
+                            android:id="@+id/boundarywallyes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/washroom" />
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="#BDBDBD" />
+
+                        <RadioButton
+
+                            android:id="@+id/boundarywallno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/wash" />
+
+                    </RadioGroup>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/barhjhjbgjkhklhjklgkigkjghjkghkj1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="start"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#E0E0E0"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Plot Area"
+                            android:textColor="#030303"
+                            android:textSize="16sp" />
+
+
+                        <EditText
+                            android:paddingLeft="10dp"
+                            android:id="@+id/plotareavalue"
+                            android:layout_width="200dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rectangle"
+                            android:gravity="fill_horizontal|center"
+                            android:hint="Plot Area"
+                            android:textSize="20dp"
+                            android:inputType="number"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="45dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/spinnerlayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textStyle="bold"
+                            android:background="@drawable/rectangle">
+
+                            <TextView
+                                android:id="@+id/plotspinnervalue"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_weight="1"
+                                 />
+
+                            <android.support.v7.widget.AppCompatSpinner
+                                android:id="@+id/plotspinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:entries="@array/itemsforarea"
+                                android:layout_weight="0"/>
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+
+                <LinearLayout
+                    android:id="@+id/panle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Post Property"
+                android:layout_gravity="bottom"
+                android:background="@drawable/rectanglebutton"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/Readytogo"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+
+

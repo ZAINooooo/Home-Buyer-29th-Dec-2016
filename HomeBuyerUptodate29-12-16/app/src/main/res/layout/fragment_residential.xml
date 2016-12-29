@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    tools:context="com.example.asad.homebuyerproject.ResidentialFragment">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@id/asadali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF">
+
+
+                <RadioButton
+                    android:id="@+id/Rpghostel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/hostdrawable" />
+
+                <RadioButton
+                    android:id="@+id/Rplot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/hostdrawable"
+                    android:visibility="visible" />
+
+                <RadioButton
+                    android:id="@+id/Rhouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/Residential"
+                    android:button="@drawable/houdrawable" />
+
+                <RadioButton
+                    android:id="@+id/Rbuilderfloor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/Residential"
+                    android:button="@drawable/uilfloor" />
+
+                <RadioButton
+                    android:id="@+id/Rpenthouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/Residential"
+                    android:button="@drawable/penhoudrawable" />
+
+
+            </RadioGroup>
+
+
+
+                <RadioGroup
+                   android:layout_alignParentRight="true"
+                    android:id="@+id/RadioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    >
+
+                    <RadioButton
+                        android:id="@+id/Rflat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/fladrawable" />
+
+                    <RadioButton
+                        android:id="@+id/Rvilla"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/vildrawable" />
+
+                    <RadioButton
+                        android:id="@+id/Rstudioaprtment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/studaprtment"
+                        android:elevation="0dp" />
+
+
+                </RadioGroup>
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+

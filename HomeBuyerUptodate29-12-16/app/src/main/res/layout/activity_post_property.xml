@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_property"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asad.homebuyerproject.Upload_Property_Activity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/appbartransparent"></include>
+
+    <ImageView
+        android:id="@+id/Backgroundimage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/background" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/ShowCase"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="40dp"
+            android:background="#212121"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
+            android:text="Tell us a bit about you"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="I am"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:background="@drawable/rectanglesmallcorner">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="50dp"
+             android:paddingLeft="40dp"
+             android:paddingRight="40dp"
+             android:text="Owner"
+             android:gravity="center"
+             android:background="#FFFFFF"
+             android:textColor="#616161"
+             android:id="@+id/radio0" />
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:paddingLeft="40dp"
+             android:paddingRight="40dp"
+             android:layout_height="50dp"
+             android:text="Builder"
+             android:background="#FFFFFF"
+             android:gravity="center"
+             android:textColor="#616161"
+             android:id="@+id/radio1" />
+
+
+         <TextView
+             android:layout_width="match_parent"
+             android:paddingLeft="40dp"
+             android:paddingRight="40dp"
+             android:layout_height="50dp"
+             android:layout_weight="1"
+             android:text="Agent"
+             android:background="#FFFFFF"
+             android:gravity="center"
+             android:textColor="#616161"
+             android:id="@+id/radio2" />
+
+
+     </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>
+
+<fragment
+android:id="@+id/fragment_navigation1"
+android:name="com.example.asad.homebuyerproject.NavigationBar"
+android:layout_width="@dimen/navigationdrawerwidth"
+android:layout_height="match_parent"
+android:layout_gravity="start"
+app:layout="@layout/fragment_navigation"
+tools:layout="@layout/fragment_navigation" />
+
+
+
+    </android.support.v4.widget.DrawerLayout>

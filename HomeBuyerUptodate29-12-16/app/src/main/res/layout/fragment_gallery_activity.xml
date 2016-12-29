@@ -1,0 +1,80 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_marginTop="10dp"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/bigimageview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="0.40"
+            android:cropToPadding="false"
+            android:soundEffectsEnabled="false"
+            android:scaleType="fitXY"
+            android:background="@drawable/add_image"
+            />
+        </LinearLayout>
+
+
+
+        <HorizontalScrollView
+
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:fillViewport="true"
+            android:measureAllChildren="false"
+            android:scrollbars="none"
+            android:layout_gravity="bottom"
+
+
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/insidescroll">
+
+                <Button
+                    android:id="@+id/cApartment"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="#EEEEBB"
+                    android:text="Add Image"
+                    android:textSize="8dp"/>
+
+
+                <View
+                    android:id="@+id/horizontalview"
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#EEEEEE" />
+
+
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+</LinearLayout>

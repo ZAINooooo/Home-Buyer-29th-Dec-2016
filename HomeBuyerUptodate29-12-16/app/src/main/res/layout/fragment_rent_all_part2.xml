@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:paddingBottom="20dp"
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly Rent"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/textprice"
+            android:paddingRight="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle"
+           android:gravity="center_vertical"
+            android:layout_marginRight="50dp"
+            android:inputType="number"
+            android:hint="Amount"
+            android:maxLength="9"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/amountpreview"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available From"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingRight="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+
+                android:id="@+id/Avaialable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rectangle"
+                android:weightSum="1">
+
+                <RadioButton
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/immediat"
+                    android:id="@+id/mImmediately"
+
+                    />
+                <View
+                    android:layout_height="match_parent"
+                    android:layout_width="0.5dp"
+                    android:background="#bdbdbd"
+                    />
+
+                <RadioButton
+
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/date123"
+                    android:id="@+id/mSelectDate"
+
+                    />
+
+
+
+
+            </RadioGroup>
+        </RelativeLayout>
+
+
+        <TextView
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:id="@+id/AvailableFrom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Available From"
+            android:background="@drawable/rectangle"
+            android:layout_marginTop="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        android:id="@+id/PossessionRemove">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Age of Construction"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <EditText
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/TestingValue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="80dp"
+                android:hint="Age of Construction"
+                android:background="@drawable/rectangleboxwhite"
+                 />
+
+            <!-- spinner -->
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/ageofconstructionspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:entries="@array/propertyage"
+                android:background="@drawable/rectanglebox"
+                android:prompt="@string/construction"
+                >
+
+            </android.support.v7.widget.AppCompatSpinner>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Post Property"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rectanglebutton"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp"
+        android:id="@+id/postproperty" />
+
+
+</LinearLayout>
